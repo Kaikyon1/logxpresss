@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Docs.css">
+    <title>Documentos</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/undraw_mobile_encryption_re_yw3o.svg" alt="">
+        </div>
+        <div class="form">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Documentações</h1>
+                    </div>
+                    <p id="tx">Documentos necessários: Contrato Social / Requerimento do Empresario / Comprovante MEI, Cartão CNPJ</p>
+                    <div class="doc">
+                        <form action="/upload" method="POST" enctype="multipart/form-data">
+                            <label for="imageUpload">Selecione uma imagem para fazer upload:</label>
+                            <input type="file" id="imageUpload" name="imageUpload" accept="image/*" required>
+        
+                            <input type="submit" value="Enviar Imagem">
+                            </form>
+                            <p>Faça uma previa apresentação sobre a empresa:</p>
+                            <textarea name="" id="" placeholder="Sua mensagem"></textarea>
+                            <div class="btn-enviar"> <input type="submit" value="ENVIAR"></div>
+                            <input type="hidden" name="_subject" value="Novo contato!">
+                            <input type="text" name="_honney" style="display: none;">
+                            <input type="hidden" name="_captcha" value="false">
+                        </div>
+          
+                <div class="continue-button">
+                    <p><a href="conc.html">Cadastrar</a></p> 
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>

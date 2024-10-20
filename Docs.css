@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c0ce94d;
+}
+
+.title img {
+    width: 90px;
+    margin-left: 130px;
+
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 140, 173);
+    padding: 1rem;
+}
+
+
+.form {
+    width: 50%;
+    background-color: #fff;
+  
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tx {
+    font-size: 12px;
+    color: #555;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+
+.doc {
+    position: absolute;
+    left: 0; /* Posiciona a div .doc no lado esquerdo da tela */
+    top: 50px; /* Define a posição em relação ao topo */
+    padding: 10px;
+    margin-top: 150px;
+    margin-left: 790px;
+}
+
+
+.doc form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .doc label {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .doc input[type="file"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .doc input[type="submit"] {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .doc input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: rgb(217, 179, 34);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(0, 140, 173);
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label,
+
+
+
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
+
+.continue-button a {
+    color: white;
+}
+
+.continue-button:hover {
+    background: transparent;
+    border: 1px solid rgb(0, 140, 173);
+    transform: translateX(8px);
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.continue-button {
+    display: inline-block;
+    color: white;
+    position: fixed;
+    background: rgb(217, 179, 34);
+    border: 1px solid transparent;
+    padding: 12px 30px ;
+    line-height: 1.4;
+    margin-top: 490px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight:  500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+textarea {
+    margin-top: 13px;
+    font-size: 16px;
+    color: #555;
+
+}
+
+input {
+    margin-bottom: 14px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+
+}
+
+@media (max-width: 600px) {
+    .doc, .title, #tx {
+        display: none;
+    }
+     
+    .continue-button {
+        text-align: center;
+    
+    }
+}

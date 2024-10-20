@@ -1,0 +1,88 @@
+body {
+    background: #B5B5F8;
+}
+
+.area {
+    text-align: center;
+}
+
+h1 {
+    color:  #6b63fff1;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 300px;
+    text-align: center;
+}
+
+.continue-button a {
+    color: white;
+}
+
+.area .logo {
+    margin-right: 1400px;
+    width: 200px;
+}
+
+
+h1::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 0.3rem;
+    background-color: rgb(217, 179, 34);
+    margin-left: 446px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.continue-button {
+    display: inline-block;
+    color: white;
+    position: fixed;
+    background: rgb(217, 179, 34);
+    border: 1px solid transparent;
+    padding: 12px 30px ;
+    line-height: 1.4;
+    margin-top: 490px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight:  500;
+    border-radius: 30px;
+    margin-top: 200px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.continue-button:hover {
+    background: transparent;
+    border: 1px solid rgb(0, 140, 173);
+    transform: translateX(8px);
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .continue-button, h1::after  {
+        display: none;
+    }
+}
